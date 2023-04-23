@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  backend:
+    image: phongvanngo/medusajs-storefront:latest
+    container_name: medusa-storefront
+    environment:
+      NEXT_PUBLIC_MEDUSA_BACKEND_URL: https://api.uat.matkinh53.com
+    ports:
+      - "8000:8000"
